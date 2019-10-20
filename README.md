@@ -1,6 +1,7 @@
 ## Local setup for developing React library with nodemon
 
-### If you are wondering how to develop a local react library and test it in sample application, this might help you.
+Have you ever wondered why don't we use nodemon in react development?
+If you are wondering how to develop a local react library and test it in sample application, this might help you.
 
 ### Get Started
 
