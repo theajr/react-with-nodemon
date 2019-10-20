@@ -2,18 +2,16 @@
 
 ### If you are wondering how to develop a local react library and test it in sample application, this might help you.
 
-> Works only for JS, JSx files, you can't import other files as it is purely depends on babel
-
 ### Get Started
 
 ```sh
-git clone https://github.com/theajr/react-with-nodemon.git
-cd react-with-nodemon
+git clone https://github.com/theajr/react-with-nodemon.git my-react-pkg
+cd my-react-pkg
 npm i
 npm start
 ```
 
-## Change `name` in `package.json` to your desire package name, example: `my-react-pkg`
+#### Change `name` in `package.json` to your desire package name, example: `my-react-pkg`
 
 Now you can change any js file in `src` folder and it will automatically transpile the code to `dist`.
 
@@ -49,6 +47,17 @@ App.propTypes = {
 
 export default App;
 ```
+
+### Publish you package!
+
+```sh
+cd my-react-pkg
+npm run compile
+npm login
+npm publish
+```
+
+✅ Done! You have published your application successfully! 👏💥🎉
 
 ## Limitations
 
