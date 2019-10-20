@@ -57,7 +57,7 @@ npm login
 npm publish
 ```
 
-✅ Done! You have published your application successfully! 👏💥🎉
+✅ Done! You have published your package successfully! 👏💥🎉
 
 ## Limitations
 
