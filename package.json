@@ -2,21 +2,38 @@
   "name": "es7setup",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
-  "dependencies": {},
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.16.0",
     "nodemon": "^1.19.3"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js"
+    "build:dev": "npm run clean && npm run compile:dev",
+    "clean": "rimraf dist",
+    "compile": "babel src -d dist --source-maps",
+    "compile:dev": "babel src -d dist -s",
+    "start": "npm run build:dev && nodemon --watch src --exec npm run compile"
   },
-  "author": "",
+  "author": {
+    "name": "AJay Kumar Pathuri",
+    "email": "ajr1396@gmail.com",
+    "url": "https://www.linkedin.com/in/theajr/"
+  },
   "license": "MIT"
 }

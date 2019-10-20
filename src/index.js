@@ -1,1 +1,2 @@
-console.log("Hello World!");
+/* eslint-disable import/prefer-default-export */
+export { default as Button } from './button';
